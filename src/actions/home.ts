@@ -7,14 +7,13 @@ export type PostType = {
 };
 
 export const getPosts = async () => {
-  // mimic api call
   try {
     const response = await fetch(
       'https://jsonplaceholder.typicode.com/todos?_limit=5',
     );
-    const data = await response.json();
+    const data: PostType[] = await response.json();
 
-    return { posts: data as PostType[] };
+    return { posts: data };
   } catch (error) {
     return {
       error: {
