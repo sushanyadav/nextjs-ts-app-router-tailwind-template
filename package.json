@@ -11,7 +11,7 @@
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,scss}'",
     "prepare": "husky install",
     "check-types": "tsc",
-    "validate": "pnpm run prettier & pnpm run lint & pnpm run check-types & pnpm run build"
+    "validate": "pnpm run prettier && pnpm run lint && pnpm run check-types && pnpm run build"
   },
   "dependencies": {
     "next": "^14.0.3",
