@@ -1,5 +1,5 @@
 'use client';
-import { PostType } from '@/actions/home';
+import { PostType } from '@/server/home';
 
 interface PostProps {
   post: PostType;

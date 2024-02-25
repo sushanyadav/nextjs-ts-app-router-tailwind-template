@@ -1,6 +1,6 @@
 import { Post } from '@/modules/Home/Post';
 
-import { getPosts } from '@/actions/home';
+import { getPosts } from '@/server/home';
 
 export const Posts = async () => {
   const data = await getPosts();
